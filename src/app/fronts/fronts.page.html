@@ -1,0 +1,28 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>FRONTS</ion-title>
+  </ion-toolbar>
+</ion-header>,
+
+<ion-content fullscreen>
+  <ion-card>
+    <ion-button size="small" style="margin-left:auto;margin-right:10px;"[routerLink]="['/home']" routerDirection ="forward">Home</ion-button>
+    <ion-button size="small" style="margin-left:auto;margin-right:10px;"[routerLink]="['/isobar']" routerDirection ="forward">Isobars</ion-button>
+    <ion-button size="small" style="margin-left:auto;margin-right:10px;"[routerLink]="['/fronts']" routerDirection ="forward">Fronts</ion-button>
+
+    <img src="http://1.bp.blogspot.com/-8Zt8RRgIPcg/UKbGCyZo21I/AAAAAAAAADA/dBtg7reM26k/s1600/ukisobar.jpg"/>
+    <ion-card-header>
+
+      <ion-card-subtitle>Fronts</ion-card-subtitle>
+      <ion-card-title>Fronts explained</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      There are three types of fronts each meaning different things. There names are a warm front , a cold front and a occlusion front. the meaning of the word front is the edge of air mass.
+      A warm front on a wather map looks like a red line with red hills on it, it means the temperture will increse and the rain will stop or decrese. A cold front means the oppisite you can see a cold front on a weather map it looks like a blue line 
+      with blue triangles on top of it . And lastly the occlusion front brings similar weather to a warm front but but it will soon be a cold front on a weather map it looks like a purple line with both
+      purple triangles and hills on it.
+      <br>
+      <ion-button [routerLink]="['/frontpics']" routerDirection ="forward">Fronts Examples</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

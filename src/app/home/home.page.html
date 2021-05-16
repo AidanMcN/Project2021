@@ -1,20 +1,28 @@
-<ion-header [translucent]="true">
+<ion-header translucent>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Home</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header>,
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content fullscreen>
+  <ion-card>
+    <ion-button size="small" style="margin-left:auto;margin-right:10px;"[routerLink]="['/home']" routerDirection ="forward">Home</ion-button>
+    <ion-button size="small" style="margin-left:auto;margin-right:10px;"[routerLink]="['/isobar']" routerDirection ="forward">Isobars</ion-button>
+    <ion-button size="small" style="margin-left:auto;margin-right:10px;"[routerLink]="['/fronts']" routerDirection ="forward">Fronts</ion-button>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <img src="https://www.thesun.ie/wp-content/uploads/sites/3/2020/05/Screenshot-2020-05-20-at-07.56.11.png"/>
+    <ion-card-header>
+
+      <ion-card-subtitle>Weather Map</ion-card-subtitle>
+      <ion-card-title>Reading weather maps</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      The weather forcast is often one of the most important pieces of information though out anyones day and very few people can read it.
+      Some key things to know are the symbols such as 'L' which means center of a low pressure area/depression, other other main symbol is 'H' for 
+      center of a high pressure area/anticyclone.
+      <br>
+      <h3 >Click to open video on how to read wethermaps</h3>
+      <ion-button (click)="Youtube()">Open Youtube</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

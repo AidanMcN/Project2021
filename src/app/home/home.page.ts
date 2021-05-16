@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
-
+  constructor(private youtube: YoutubeVideoPlayer) {}
+  Youtube(){
+    this.youtube.openVideo('https://www.youtube.com/watch?v=bd7DcVnrSL8');
+  }
+  
 }

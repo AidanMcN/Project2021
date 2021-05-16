@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'isobar',
+    loadChildren: () => import('./isobar/isobar.module').then( m => m.IsobarPageModule)
+  },
+  {
+    path: 'fronts',
+    loadChildren: () => import('./fronts/fronts.module').then( m => m.FrontsPageModule)
+  },
+  {
+    path: 'weather',
+    loadChildren: () => import('./weather/weather.module').then( m => m.WeatherPageModule)
+  },
+  {
+    path: 'frontpics',
+    loadChildren: () => import('./frontpics/frontpics.module').then( m => m.FrontpicsPageModule)
+  },
 ];
 
 @NgModule({

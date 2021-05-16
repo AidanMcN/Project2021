@@ -1,0 +1,34 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>FRONTS</ion-title>
+  </ion-toolbar>
+</ion-header>,
+
+<ion-content fullscreen>
+  <ion-card>
+    <ion-button size="small" style="margin-left:auto;margin-right:10px;"[routerLink]="['/home']" routerDirection ="forward">Home</ion-button>
+    <ion-button size="small" style="margin-left:auto;margin-right:10px;"[routerLink]="['/isobar']" routerDirection ="forward">Isobars</ion-button>
+    <ion-button size="small" style="margin-left:auto;margin-right:10px;"[routerLink]="['/fronts']" routerDirection ="forward">Fronts</ion-button>
+
+    
+    <ion-card-header>
+
+      <ion-card-subtitle>Fronts</ion-card-subtitle>
+      <ion-card-title>Fronts Examples</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Warm Front
+      <br>
+      <img src="http://www.ecn.ac.uk/images/warm.gif/image_preview"/>
+      <br>
+      Cold Front
+      <br>
+      <img src="http://www.ecn.ac.uk/images/def1.gif/image_preview"/>
+      <br>
+      Occlusion  Front
+      <br>
+      <img src="http://www.ecn.ac.uk/images/OCCLUSION11.GIF/image_preview"/>
+      <br>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
